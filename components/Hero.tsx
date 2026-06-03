@@ -50,7 +50,7 @@ export default function Hero() {
         <div className="aurora-blob animate-aurora-1 top-[-10%] left-[10%] w-[80vw] h-[80vw] bg-brand/12" />
         <div className="aurora-blob animate-aurora-3 bottom-[-10%] right-[5%] w-[70vw] h-[70vw] bg-violet-500/10" />
       </div>
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full pointer-events-none z-0 bg-[radial-gradient(ellipse_at_center,rgba(10,10,10,0.7)_0%,transparent_70%)]" />
+      {/* No dark halo on mobile — no 3D sphere to cover */}
       <div className="flex-1 flex flex-col justify-center items-center text-center px-5 pt-24 pb-10 pointer-events-none">
         <motion.h1
           initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
