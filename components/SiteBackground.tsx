@@ -35,8 +35,8 @@ export default function SiteBackground() {
         </div>
       </motion.div>
 
-      {/* Living neural network — subtle texture (the 3D sphere is the hero) */}
-      <div className="absolute inset-0 opacity-25">
+      {/* Living neural network — desktop only (performance on mobile) */}
+      <div className="absolute inset-0 opacity-25 hidden sm:block">
         <NeuralBackground />
       </div>
 

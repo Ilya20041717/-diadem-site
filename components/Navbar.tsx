@@ -71,9 +71,9 @@ export default function Navbar() {
               <img
                 src="/diadem-mark.png"
                 alt="Diadem"
-                className="w-8 h-8 flex-shrink-0 object-contain group-hover:scale-110 transition-transform duration-300"
+                className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 object-contain group-hover:scale-110 transition-transform duration-300"
               />
-              <span className="font-display relative top-[3px] text-[18px] font-semibold tracking-[0.34em] text-white/95 uppercase">
+              <span className="font-display relative top-[3px] text-[15px] sm:text-[18px] font-semibold tracking-[0.28em] sm:tracking-[0.34em] text-white/95 uppercase">
                 Diadem
               </span>
             </a>

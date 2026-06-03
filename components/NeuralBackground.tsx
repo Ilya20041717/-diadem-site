@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 interface Node {
   x: number
@@ -13,8 +13,18 @@ interface Node {
 
 export default function NeuralBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const [isDesktop, setIsDesktop] = useState(false)
 
   useEffect(() => {
+    const mq = window.matchMedia('(min-width: 640px)')
+    setIsDesktop(mq.matches)
+    const handler = (e: MediaQueryListEvent) => setIsDesktop(e.matches)
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [])
+
+  useEffect(() => {
+    if (!isDesktop) return
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
@@ -90,7 +100,9 @@ export default function NeuralBackground() {
       cancelAnimationFrame(raf)
       ro.disconnect()
     }
-  }, [])
+  }, [isDesktop])
+
+  if (!isDesktop) return null
 
   return (
     <canvas
