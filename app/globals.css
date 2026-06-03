@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #ABA9A1;
+  --bg: #0A0A0A;
+  --surface: #1A1A1A;
+  --surface-2: #2A2A2A;
+  --foreground: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--surface-2); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--brand); }
+
+/* Glass utilities */
+@layer components {
+  .glass {
+    background: rgba(26, 26, 26, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .glass-hover {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+
+  .glass-hover:hover {
+    border-color: rgba(171, 169, 161, 0.2);
+    background: rgba(26, 26, 26, 0.7);
+    box-shadow: 0 0 40px rgba(171, 169, 161, 0.07);
+  }
+
+  .text-gradient {
+    background: linear-gradient(120deg, #ffffff 0%, #ead9b3 36%, #ABA9A1 58%, #ffffff 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-x 8s ease infinite;
+  }
+
+  /* Drifting aurora blob used behind the hero */
+  .aurora-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(90px);
+    opacity: 0.5;
+    will-change: transform;
+    pointer-events: none;
+  }
+
+  .section-pad {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container-site {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand);
+    border: 1px solid rgba(171, 169, 161, 0.2);
+    background: rgba(171, 169, 161, 0.05);
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: #ffffff;
+    color: #0A0A0A;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+  }
+
+  .btn-primary:hover {
+    background: var(--brand);
+    transform: translateY(-1px);
+    box-shadow: 0 12px 40px rgba(171, 169, 161, 0.25);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    white-space: nowrap;
+  }
+
+  .btn-secondary:hover {
+    border-color: rgba(171, 169, 161, 0.4);
+    background: rgba(171, 169, 161, 0.06);
+  }
+
+  .section-heading {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: clamp(30px, 4.6vw, 52px);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.14;
+  }
+
+  .section-sub {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.56);
+  }
+
+  /* Elegant serif accent for wordmark */
+  .font-display {
+    font-family: var(--font-display), Georgia, serif;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Ken Burns — slow continuous drift+zoom so the background never feels static */
+@keyframes ken-burns {
+  0%   { transform: scale(1.06) translate3d(0, 0, 0); }
+  50%  { transform: scale(1.16) translate3d(-2.5%, -2%, 0); }
+  100% { transform: scale(1.06) translate3d(0, 0, 0); }
+}
+.ken-burns {
+  animation: ken-burns 38s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ken-burns { animation: none; transform: scale(1.06); }
+}
+
+/* Infinite marquee for industries / integrations strips */
+@keyframes marquee-x {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee-x 32s linear infinite;
+}
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+@media (max-width: 768px) {
+  .section-pad {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .container-site {
+    padding: 0 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

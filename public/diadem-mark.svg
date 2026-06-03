@@ -1,0 +1,23 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="silver" x1="120" y1="36" x2="120" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.32" stop-color="#d7d7d2"/>
+      <stop offset="0.62" stop-color="#9a9a94"/>
+      <stop offset="0.85" stop-color="#c4c4be"/>
+      <stop offset="1" stop-color="#ededea"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Crown -->
+  <path d="M72 104 L80 52 L104 82 L120 40 L138 80 L162 48 L182 70 L182 104"
+        stroke="url(#silver)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  <path d="M113 60 L120 42 L127 60" stroke="url(#silver)" stroke-width="6"
+        stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+
+  <!-- Letter D -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M70 98 L70 200 L118 200 C158 200 184 178 184 149 C184 120 158 98 118 98 Z
+           M92 119 L92 179 L117 179 C144 179 162 166 162 149 C162 132 144 119 117 119 Z"
+        fill="url(#silver)"/>
+</svg>
