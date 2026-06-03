@@ -42,13 +42,13 @@ export default function Hero() {
   }
 
   const heroContent = (
-    <div className="relative z-10 flex flex-col items-center justify-center text-center container-site pt-24 pb-12 pointer-events-none flex-1">
+    <div className="relative z-10 flex flex-col items-center justify-center text-center w-full px-5 pt-24 pb-10 pointer-events-none flex-1">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1, ease }}
-        className="text-gradient section-heading max-w-3xl mx-auto mb-6 px-4"
-        style={{ fontSize: 'clamp(26px, 6.5vw, 54px)' }}
+        className="text-gradient section-heading w-full mx-auto mb-5"
+        style={{ fontSize: 'clamp(28px, 8vw, 54px)' }}
       >
         Автоматизируем бизнес с&nbsp;помощью{' '}
         <span className="italic font-medium">искусственного интеллекта</span>
@@ -58,7 +58,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2, ease }}
-        className="section-sub max-w-xl mx-auto mb-12"
+        className="text-white/55 text-[15px] leading-relaxed w-full mx-auto mb-10"
       >
         Внедряем AI-решения, которые заменяют рутину, увеличивают продажи и работают 24/7.
       </motion.p>
@@ -67,21 +67,19 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3, ease }}
-        className="flex flex-col sm:flex-row items-center gap-3 mb-16 pointer-events-auto"
+        className="flex flex-col items-stretch w-full gap-3 mb-10 pointer-events-auto"
       >
         <motion.button
-          whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
-          transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+          whileTap={{ scale: 0.97 }}
           onClick={() => document.querySelector('#cta')?.scrollIntoView({ behavior: 'smooth' })}
-          className="btn-primary"
+          className="btn-primary justify-center"
         >
           Получить консультацию <ArrowRight size={16} />
         </motion.button>
         <motion.button
-          whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
-          transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+          whileTap={{ scale: 0.97 }}
           onClick={() => document.querySelector('#cases')?.scrollIntoView({ behavior: 'smooth' })}
-          className="btn-secondary"
+          className="btn-secondary justify-center"
         >
           Посмотреть кейсы
         </motion.button>
@@ -91,12 +89,12 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.45, ease }}
-        className="flex items-center gap-0 glass rounded-2xl overflow-hidden w-full max-w-sm sm:w-auto sm:max-w-none"
+        className="flex items-center w-full glass rounded-2xl overflow-hidden"
       >
         {stats.map((s, i) => (
-          <div key={s.value} className={`flex-1 sm:flex-none px-4 sm:px-8 py-4 sm:py-5 text-center ${i < stats.length - 1 ? 'border-r border-white/[0.06]' : ''}`}>
-            <div className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-0.5">{s.value}</div>
-            <div className="text-[10px] sm:text-xs text-white/40 whitespace-nowrap">{s.label}</div>
+          <div key={s.value} className={`flex-1 py-4 text-center ${i < stats.length - 1 ? 'border-r border-white/[0.06]' : ''}`}>
+            <div className="text-lg font-bold text-white tracking-tight mb-0.5">{s.value}</div>
+            <div className="text-[10px] text-white/40 leading-tight px-1">{s.label}</div>
           </div>
         ))}
       </motion.div>

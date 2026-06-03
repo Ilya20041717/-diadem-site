@@ -898,7 +898,7 @@ function Hero() {
         });
     };
     const heroContent = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "relative z-10 flex flex-col items-center justify-center text-center container-site pt-24 pb-12 pointer-events-none flex-1",
+        className: "relative z-10 flex flex-col items-center justify-center text-center w-full px-5 pt-24 pb-10 pointer-events-none flex-1",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
                 initial: {
@@ -914,9 +914,9 @@ function Hero() {
                     delay: 0.1,
                     ease
                 },
-                className: "text-gradient section-heading max-w-3xl mx-auto mb-6 px-4",
+                className: "text-gradient section-heading w-full mx-auto mb-5",
                 style: {
-                    fontSize: 'clamp(26px, 6.5vw, 54px)'
+                    fontSize: 'clamp(28px, 8vw, 54px)'
                 },
                 children: [
                     "Автоматизируем бизнес с помощью",
@@ -949,7 +949,7 @@ function Hero() {
                     delay: 0.2,
                     ease
                 },
-                className: "section-sub max-w-xl mx-auto mb-12",
+                className: "text-white/55 text-[15px] leading-relaxed w-full mx-auto mb-10",
                 children: "Внедряем AI-решения, которые заменяют рутину, увеличивают продажи и работают 24/7."
             }, void 0, false, {
                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
@@ -970,31 +970,23 @@ function Hero() {
                     delay: 0.3,
                     ease
                 },
-                className: "flex flex-col sm:flex-row items-center gap-3 mb-16 pointer-events-auto",
+                className: "flex flex-col items-stretch w-full gap-3 mb-10 pointer-events-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                        whileHover: {
-                            scale: 1.04
-                        },
                         whileTap: {
                             scale: 0.97
-                        },
-                        transition: {
-                            type: 'spring',
-                            stiffness: 400,
-                            damping: 17
                         },
                         onClick: ()=>document.querySelector('#cta')?.scrollIntoView({
                                 behavior: 'smooth'
                             }),
-                        className: "btn-primary",
+                        className: "btn-primary justify-center",
                         children: [
                             "Получить консультацию ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                 size: 16
                             }, void 0, false, {
                                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                                lineNumber: 78,
+                                lineNumber: 77,
                                 columnNumber: 33
                             }, this)
                         ]
@@ -1004,25 +996,17 @@ function Hero() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                        whileHover: {
-                            scale: 1.04
-                        },
                         whileTap: {
                             scale: 0.97
-                        },
-                        transition: {
-                            type: 'spring',
-                            stiffness: 400,
-                            damping: 17
                         },
                         onClick: ()=>document.querySelector('#cases')?.scrollIntoView({
                                 behavior: 'smooth'
                             }),
-                        className: "btn-secondary",
+                        className: "btn-secondary justify-center",
                         children: "Посмотреть кейсы"
                     }, void 0, false, {
                         fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                        lineNumber: 80,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1045,35 +1029,35 @@ function Hero() {
                     delay: 0.45,
                     ease
                 },
-                className: "flex items-center gap-0 glass rounded-2xl overflow-hidden w-full max-w-sm sm:w-auto sm:max-w-none",
+                className: "flex items-center w-full glass rounded-2xl overflow-hidden",
                 children: stats.map((s, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `flex-1 sm:flex-none px-4 sm:px-8 py-4 sm:py-5 text-center ${i < stats.length - 1 ? 'border-r border-white/[0.06]' : ''}`,
+                        className: `flex-1 py-4 text-center ${i < stats.length - 1 ? 'border-r border-white/[0.06]' : ''}`,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-xl sm:text-2xl font-bold text-white tracking-tight mb-0.5",
+                                className: "text-lg font-bold text-white tracking-tight mb-0.5",
                                 children: s.value
                             }, void 0, false, {
                                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                                lineNumber: 98,
+                                lineNumber: 96,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-[10px] sm:text-xs text-white/40 whitespace-nowrap",
+                                className: "text-[10px] text-white/40 leading-tight px-1",
                                 children: s.label
                             }, void 0, false, {
                                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                                lineNumber: 99,
+                                lineNumber: 97,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, s.value, true, {
                         fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                        lineNumber: 97,
+                        lineNumber: 95,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                lineNumber: 90,
+                lineNumber: 88,
                 columnNumber: 7
             }, this)
         ]
@@ -1093,27 +1077,27 @@ function Hero() {
                         className: "aurora-blob animate-aurora-1 top-[-10%] left-[10%] w-[80vw] h-[80vw] bg-brand/12"
                     }, void 0, false, {
                         fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                        lineNumber: 110,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "aurora-blob animate-aurora-3 bottom-[-10%] right-[5%] w-[70vw] h-[70vw] bg-violet-500/10"
                     }, void 0, false, {
                         fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                        lineNumber: 111,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                lineNumber: 109,
+                lineNumber: 107,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full pointer-events-none z-0 bg-[radial-gradient(ellipse_at_center,rgba(10,10,10,0.7)_0%,transparent_70%)]"
             }, void 0, false, {
                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                lineNumber: 113,
+                lineNumber: 111,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1121,7 +1105,7 @@ function Hero() {
                 children: heroContent
             }, void 0, false, {
                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                lineNumber: 114,
+                lineNumber: 112,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -1146,7 +1130,7 @@ function Hero() {
                         children: "Scroll"
                     }, void 0, false, {
                         fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                        lineNumber: 123,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1166,24 +1150,24 @@ function Hero() {
                             size: 16
                         }, void 0, false, {
                             fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                            lineNumber: 125,
+                            lineNumber: 123,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                        lineNumber: 124,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                lineNumber: 117,
+                lineNumber: 115,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-        lineNumber: 108,
+        lineNumber: 106,
         columnNumber: 5
     }, this);
     // Desktop: full scroll-driven 3D sphere animation
@@ -1200,12 +1184,12 @@ function Hero() {
                         reduce: reduceMotion
                     }, void 0, false, {
                         fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                        lineNumber: 136,
+                        lineNumber: 134,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                    lineNumber: 135,
+                    lineNumber: 133,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1218,34 +1202,34 @@ function Hero() {
                             className: "aurora-blob animate-aurora-1 top-[-10%] left-[10%] w-[55vw] h-[55vw] max-w-[700px] max-h-[700px] bg-brand/12"
                         }, void 0, false, {
                             fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                            lineNumber: 139,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "aurora-blob animate-aurora-3 bottom-[-15%] right-[10%] w-[50vw] h-[50vw] max-w-[650px] max-h-[650px] bg-violet-500/10"
                         }, void 0, false, {
                             fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                            lineNumber: 140,
+                            lineNumber: 138,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                    lineNumber: 138,
+                    lineNumber: 136,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] max-w-[140vw] h-[520px] pointer-events-none z-0 bg-[radial-gradient(ellipse_at_center,rgba(10,10,10,0.82)_0%,rgba(10,10,10,0.4)_45%,transparent_72%)]"
                 }, void 0, false, {
                     fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                    lineNumber: 142,
+                    lineNumber: 140,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "absolute top-0 left-0 right-0 h-px z-0 bg-gradient-to-r from-transparent via-white/[0.08] to-transparent"
                 }, void 0, false, {
                     fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                    lineNumber: 143,
+                    lineNumber: 141,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1257,7 +1241,7 @@ function Hero() {
                     children: heroContent
                 }, void 0, false, {
                     fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                    lineNumber: 144,
+                    lineNumber: 142,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -1273,7 +1257,7 @@ function Hero() {
                             children: "Scroll"
                         }, void 0, false, {
                             fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                            lineNumber: 153,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Library$2f$Mobile__Documents$2f$com$7e$apple$7e$CloudDocs$2f_41d$$_443$$_436$$_43d$$_43e$$_435$$2f$Diadem$2f$my$2d$company$2d$site$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1293,29 +1277,29 @@ function Hero() {
                                 size: 16
                             }, void 0, false, {
                                 fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                                lineNumber: 155,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                            lineNumber: 154,
+                            lineNumber: 152,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-                    lineNumber: 147,
+                    lineNumber: 145,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-            lineNumber: 134,
+            lineNumber: 132,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Library/Mobile Documents/com~apple~CloudDocs/Нужное/Diadem/my-company-site/components/Hero.tsx",
-        lineNumber: 133,
+        lineNumber: 131,
         columnNumber: 5
     }, this);
 }

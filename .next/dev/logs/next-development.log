@@ -62,3 +62,4 @@
 {"timestamp":"00:04:37.470","source":"Browser","level":"WARN","message":"\u001b[33mYou have defined a target options but the provided ref is not yet hydrated, probably because it's defined higher up the tree. Try calling useScroll() in the same component as the ref, or setting its `layoutEffect: false` option.\u001b[39m"}
 {"timestamp":"00:04:37.470","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mPlease ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
 {"timestamp":"00:04:37.470","source":"Browser","level":"WARN","message":"\u001b[33mPlease ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.\u001b[39m"}
+{"timestamp":"00:06:28.496","source":"Server","level":"LOG","message":"✓ Compiled in 120ms"}
