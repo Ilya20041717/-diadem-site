@@ -22,7 +22,9 @@ export default function Hero() {
     offset: ['start start', 'end start'],
   })
   const reduceMotion = useReducedMotion() ?? false
-  const [isDesktop, setIsDesktop] = useState(false)
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window !== 'undefined' ? window.matchMedia('(min-width: 640px)').matches : true
+  )
   useEffect(() => {
     const mq = window.matchMedia('(min-width: 640px)')
     setIsDesktop(mq.matches)

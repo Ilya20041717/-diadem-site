@@ -13,7 +13,9 @@ interface Node {
 
 export default function NeuralBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [isDesktop, setIsDesktop] = useState(false)
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window !== 'undefined' ? window.matchMedia('(min-width: 640px)').matches : true
+  )
 
   useEffect(() => {
     const mq = window.matchMedia('(min-width: 640px)')
